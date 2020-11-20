@@ -1,0 +1,33 @@
+nav{
+    height: 2.5rem;
+    background-color:  #383B49;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.logoSpoiler{
+    width: auto;
+    position: absolute;
+    left: 35%;
+    top: 1%;
+    font-family: 'Sansita', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    background: -webkit-linear-gradient(#FC947D 0%, #FB7079 53.65%, #FA5075 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.icono{
+    width: auto;
+    float: right;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+
+.icono-left{
+    width: auto;
+    float: left;
+    margin-left: 2%;
+    margin-top: 2%;
+}
