@@ -31,3 +31,17 @@ nav{
     margin-left: 2%;
     margin-top: 2%;
 }
+
+@media only screen and (min-width: 420px) {
+    .icono{
+        margin-top: 1.5%;
+    }
+
+    .icono-left{
+        margin-top: 1%;
+    }
+
+    .logoSpoiler{
+        left: 45%;
+    }
+}
