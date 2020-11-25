@@ -1,0 +1,103 @@
+nav{
+    height: 2.5rem;
+    background-color: var(--dark-grey);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.logoSpoiler{
+    width: auto;
+    position: absolute;
+    left: 35%;
+    top: 1%;
+    font-family: 'Sansita', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    background: -webkit-linear-gradient(#FC947D 0%, #FB7079 53.65%, #FA5075 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.icono{
+    width: auto;
+    float: right;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+
+.icono-left{
+    width: auto;
+    float: left;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+#menu{
+    float: right;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--dark-grey);
+    position: fixed;
+	top: 0;
+	bottom: 0;
+    right:-300px;
+    transition: all 0.75s ease;
+    z-index: 2;
+    opacity: 95%;
+}
+
+#img-perfil{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.lista{
+    text-align: center;
+    height: 2rem;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: coral;
+    margin-top: 1.5%;
+    background: -webkit-linear-gradient(#FC947D 0%, #FB7079 53.65%, #FA5075 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.fotter{
+    width: 100%;
+    text-align: center;
+    height: 2rem;
+    border-width: 1px;
+    border-top-style: solid;
+    border-top-color: coral;
+    background: -webkit-linear-gradient(#FC947D 0%, #FB7079 53.65%, #FA5075 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    bottom: 0%;
+    margin-left: auto;
+    margin-right:0;
+}
+
+@media only screen and (min-width: 420px) {
+    .icono{
+        margin-top: 1.5%;
+    }
+
+    .icono-left{
+        margin-top: 1%;
+    }
+
+    .logoSpoiler{
+        left: 45%;
+    }
+
+    #menu{
+        right: -550px;
+    }
+}

@@ -8,6 +8,8 @@ import { LeftNavigationBarComponent } from './left-navigation-bar/left-navigatio
 import { HomeComponent } from './home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MusicReproductorComponent } from './music-reproductor/music-reproductor.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+
 
 
 @NgModule({
@@ -18,6 +20,7 @@ import { MusicReproductorComponent } from './music-reproductor/music-reproductor
     LeftNavigationBarComponent,
     HomeComponent,
     MusicReproductorComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
