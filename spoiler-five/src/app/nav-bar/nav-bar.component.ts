@@ -17,7 +17,6 @@ export class NavBarComponent implements OnInit {
   }
 
   clickAddTodo() {
-
     if (!this.visible) {
       let menu = document.querySelector("#menu");
       this.pixeles = '0px';
@@ -25,13 +24,7 @@ export class NavBarComponent implements OnInit {
     }
   }
 
-  cerrarMenu() {
-    if (this.visible) {
-      let menu = document.querySelector("#menu");
-      this.pixeles = '-300px';
-      this.visible = false;
-    }
-  }
+
 
   getPixeles() {
     return this.pixeles;
@@ -40,7 +33,11 @@ export class NavBarComponent implements OnInit {
   @HostListener('document:click', ['$event'])
   handleClick(event: Event) {
     if (!this._eref.nativeElement.contains(event.target)) {
-      this.cerrarMenu();
+      if (this.visible) {
+        let menu = document.querySelector("#menu");
+        this.pixeles = '-300px';
+        this.visible = false;
+      }
     }
   }
 
