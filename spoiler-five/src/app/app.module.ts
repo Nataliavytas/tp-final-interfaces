@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MusicReproductorComponent } from './music-reproductor/music-reproductor.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DetailComponent } from './detail/detail.component';
 
 
 
@@ -20,10 +22,12 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     LeftNavigationBarComponent,
     HomeComponent,
     MusicReproductorComponent,
-    NavBarComponent
+    NavBarComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FontAwesomeModule,
   ],
   providers: [],

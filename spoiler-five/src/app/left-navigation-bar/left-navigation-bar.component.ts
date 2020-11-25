@@ -18,4 +18,5 @@ export class LeftNavigationBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
 }
