@@ -1,6 +1,6 @@
 nav{
     height: 2.5rem;
-    background-color:  #383B49;
+    background-color: var(--dark-grey);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -44,6 +44,7 @@ nav{
     right:-300px;
     transition: all 0.75s ease;
     z-index: 2;
+    opacity: 95%;
 }
 
 #img-perfil{
