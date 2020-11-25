@@ -1,8 +1,10 @@
-@media only screen and (max-width: 360px) {
-    nav {
-        background-color: #181B2C;
-        height: 80px;
-    }
+nav {
+    background-color: #181B2C;
+    height: 10vh;
+    width: 100vw;
+}
+
+@media only screen and (max-width: 420px) {
     a {
         text-decoration: none !important;
         color: white;

@@ -1,0 +1,47 @@
+footer {
+    height: 100px;
+}
+
+.icon {
+    font-size: 22px;
+}
+
+.play {
+    font-size: 36px;
+}
+
+.reproductor {
+    font-size: 28px;
+}
+
+.arrow {
+    font-size: 16px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+@media only screen and (min-width: 420px) {
+    footer {
+        height: 118px;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    .review fa-icon {
+        font-size: 22px;
+    }
+    .music fa-icon {
+        font-size: 38px;
+    }
+    fa-icon {
+        font-size: 28px;
+    }
+    .music .play {
+        font-size: 50px;
+    }
+}
