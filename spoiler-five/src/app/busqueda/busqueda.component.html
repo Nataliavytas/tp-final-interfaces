@@ -22,13 +22,13 @@
 
     <div class="inputGroups">
         <label for="miselect">Genero</label>
-        <select class="custom-select" name="miselect" [(ngModel)]="seleccionados">
+        <select class="custom-select" name="miselect" [(ngModel)]="seleccionadoGenero">
             <option selected>Open this select menu</option>
             <option [value]="item" *ngFor="let item of genero">{{item}}</option>
         </select>
 
         <label for="miselect">Decada</label>
-        <select class="custom-select" name="miselect" [(ngModel)]="seleccionados">
+        <select class="custom-select" name="miselect" [(ngModel)]="seleccionadoDecada">
             <option selected>Open this select menu</option>
             <option [value]="item" *ngFor="let item of decadas">{{item}}</option>
         </select>
