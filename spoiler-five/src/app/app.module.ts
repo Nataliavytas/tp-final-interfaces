@@ -10,6 +10,11 @@ import { HomeComponent } from './home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MusicReproductorComponent } from './music-reproductor/music-reproductor.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DetailComponent } from './detail/detail.component';
+import { DetailSongComponent } from './detail-song/detail-song.component';
+import { DetailPlaylistComponent } from './detail-playlist/detail-playlist.component';
+import { DetailPodcastComponent } from './detail-podcast/detail-podcast.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
 
 
@@ -24,10 +29,15 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
     LeftNavigationBarComponent,
     HomeComponent,
     MusicReproductorComponent,
-    NavBarComponent
+    NavBarComponent,
+    DetailComponent,
+    DetailSongComponent,
+    DetailPlaylistComponent,
+    DetailPodcastComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FontAwesomeModule,
   ],
   providers: [],
