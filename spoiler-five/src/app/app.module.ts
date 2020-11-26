@@ -39,11 +39,7 @@ import { PlaylistItemComponent } from './playlist-item/playlist-item.component';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-<<<<<<< Updated upstream
-    FormsModule
-=======
     FormsModule,
->>>>>>> Stashed changes
   ],
   providers: [],
   bootstrap: [AppComponent]
