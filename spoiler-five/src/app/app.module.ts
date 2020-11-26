@@ -18,7 +18,7 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
   declarations: [
     AppComponent,
     NavBarComponent,
-    BusquedaComponent
+    BusquedaComponent,
     LandingPageComponent,
     LandingNavbarComponent,
     LeftNavigationBarComponent,
@@ -29,9 +29,10 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
   imports: [
     BrowserModule,
     FontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+export class AppModule {
 }
