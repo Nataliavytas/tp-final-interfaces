@@ -13,8 +13,8 @@ export class NavBarComponent implements OnInit {
 
   genero: string[] = ["Rock", "Pop", "Indie", "Clasico"];
   decadas: string[] = ["70´s", "80´s", "90´s", "00´s"];
-  seleccionadoGenero: string[] = [];
-  seleccionadoDecada: string[] = [];
+  seleccionadoGenero: string[];
+  seleccionadoDecada: string[];
 
   constructor(private _eref: ElementRef) { }
 
