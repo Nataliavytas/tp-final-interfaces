@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { faClock, faHeart, faShare, faShareAlt, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faClock, faEllipsisH, faHeart, faList, faPlay, faShare, faShareAlt, faStar } from '@fortawesome/free-solid-svg-icons';
 import { Comment } from './Comment';
+import { MusicElement } from './MusicElement';
 
 @Component({
   selector: 'app-detail',
@@ -8,6 +9,7 @@ import { Comment } from './Comment';
   styleUrls: ['./detail.component.css']
 })
 export class DetailComponent implements OnInit {
+
 
   comments: Comment[] = [{
     username: "Roberto", 
@@ -25,6 +27,9 @@ export class DetailComponent implements OnInit {
   faClock = faClock;
   faShare = faShareAlt;
   faHeart = faHeart;
+  faPlay = faPlay;
+  faList = faList;
+  faDots = faEllipsisH;
 
   constructor() { }
 

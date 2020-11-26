@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DetailComponent } from './detail/detail.component';
+import { DetailPlaylistComponent } from './detail-playlist/detail-playlist.component';
+import { DetailPodcastComponent } from './detail-podcast/detail-podcast.component';
+import { DetailSongComponent } from './detail-song/detail-song.component';
 import { HomeComponent } from './home/home.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 
@@ -17,7 +19,13 @@ const routes: Routes = [
       path: 'home', component: HomeComponent
     },
     {
-      path: 'detail', component: DetailComponent
+      path: 'song/detail', component: DetailSongComponent
+    },
+    {
+      path: 'playlist/detail', component: DetailPlaylistComponent
+    },
+    {
+      path: 'podcast/detail', component: DetailPodcastComponent
     },
   ];
   

@@ -11,6 +11,9 @@ import { MusicReproductorComponent } from './music-reproductor/music-reproductor
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DetailComponent } from './detail/detail.component';
+import { DetailSongComponent } from './detail-song/detail-song.component';
+import { DetailPlaylistComponent } from './detail-playlist/detail-playlist.component';
+import { DetailPodcastComponent } from './detail-podcast/detail-podcast.component';
 
 
 
@@ -23,7 +26,10 @@ import { DetailComponent } from './detail/detail.component';
     HomeComponent,
     MusicReproductorComponent,
     NavBarComponent,
-    DetailComponent
+    DetailComponent,
+    DetailSongComponent,
+    DetailPlaylistComponent,
+    DetailPodcastComponent
   ],
   imports: [
     BrowserModule,
