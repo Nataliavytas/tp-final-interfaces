@@ -1,4 +1,5 @@
-nav{
+
+#mobile{
     height: 3.5rem;
     background-color: var(--dark-grey);
     box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.2);
@@ -84,6 +85,75 @@ nav{
     margin-right:0;
 }
 
+#desktop{
+    position: absolute;
+    height: 6rem;
+    background-color: var(--dark-grey);
+    box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.2);
+    z-index: 1;
+    width: 82vw;
+    left: 18vw;
+    z-index: 1;
+}
+
+
+#perfil{
+    float: right;
+    margin: 1%;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.search{
+    left: 5vw;
+    width: 20vw;
+    top: 1vw;
+}
+
+.redondeadonorelieve {
+    top: 1%;
+    border-radius: 5px;
+    border: 1px solid coral;
+    background-color: var(--dark-grey);
+    color: white;
+    height: 2rem;
+}
+
+.btnfilter{
+    margin-top: 2.5%;
+    margin-left: 1.5%;
+}
+
+#filterMenu{
+    margin-top: 1rem;
+    margin-left: 25vw;
+    width: 20vw;
+    height: 40vh;
+    background-color: var(--dark-grey);
+    border-radius: 5px;
+    border: 1px solid coral;
+    padding: 1%;
+}
+
+#menuPerfil{
+    float: right;
+    margin-right: 1%;
+    margin-top: 6.5rem;
+    width: 20vw;
+    height: 40vh;
+    background-color: var(--dark-grey);
+    border-radius: 5px;
+    border: 1px solid coral;
+    padding: 1%;
+    z-index: 3;
+}
+
+
+@media only screen and (max-width: 899px){
+    #desktop{
+       visibility: hidden;
+    }
+}
 @media only screen and (min-width: 420px) {
     .icono{
         margin-top: 1.5%;
@@ -100,4 +170,39 @@ nav{
     #menu{
         right: -550px;
     }
+}
+
+@media only screen and (min-width: 994px) {
+     #mobile{
+        display: none;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #desktop{
+        visibility: visible;
+    }
+
+    .icono{
+        margin-top: 2.5%;
+        margin-right: 1%;
+    }
+
+    .icono-left{
+        margin-top: 2.5%;
+    }
+
+    .redondeadonorelieve {
+        margin-top: 2.5%;
+        margin-left: 0.5%;
+        height: 40px;
+        width: 20vw;
+      }
+
+    
+
+    
+    
 }
