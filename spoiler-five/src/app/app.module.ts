@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -14,12 +15,15 @@ import { DetailComponent } from './detail/detail.component';
 import { DetailSongComponent } from './detail-song/detail-song.component';
 import { DetailPlaylistComponent } from './detail-playlist/detail-playlist.component';
 import { DetailPodcastComponent } from './detail-podcast/detail-podcast.component';
+import { BusquedaComponent } from './busqueda/busqueda.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavBarComponent,
+    BusquedaComponent
     LandingPageComponent,
     LandingNavbarComponent,
     LeftNavigationBarComponent,
