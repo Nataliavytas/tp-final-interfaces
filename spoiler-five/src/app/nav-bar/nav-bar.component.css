@@ -104,14 +104,9 @@
     height: 4.5rem;
 }
 
-.search{
-    left: 5vw;
-    width: 20vw;
-    top: 1vw;
-}
 
 .redondeadonorelieve {
-    top: 1%;
+    top: 0.5%;
     border-radius: 5px;
     border: 1px solid coral;
     background-color: var(--dark-grey);
@@ -202,23 +197,37 @@
 
     #desktop{
         display: inline-block;
+        height: 6rem;
+    }
+
+    #menuPerfil{
+        display: inline-block;
+    }
+
+    #filterMenu{
+        display: inline-block;
     }
 
     .icono{
-        margin-top: 2.5%;
+        margin-top: 1%;
         margin-right: 1%;
     }
 
     .icono-left{
-        margin-top: 2.5%;
+        margin-top: 1%;
     }
 
     .redondeadonorelieve {
-        margin-top: 2.5%;
+        margin-top: 1%;
         margin-left: 0.5%;
         height: 40px;
         width: 20vw;
       }
+
+    .lista{
+        height: 2rem;
+        text-align: center;
+    }
 
     
 
