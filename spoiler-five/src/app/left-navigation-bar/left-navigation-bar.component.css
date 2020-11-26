@@ -1,0 +1,32 @@
+/* Acomodar la altura en base a la altura de la pantalla */
+
+aside {
+    width: 18%;
+    height: 100%;
+}
+
+.list-group-item {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    line-height: normal;
+    padding: .10em 1em;
+}
+
+fa-icon {
+    font-size: 21px;
+}
+
+a {
+    font-size: 20px;
+}
+
+.primary-button {
+    height: 58px;
+    width: 15.639vw;
+    border-radius: 15px;
+}
+
+.bar-logo {
+    height: 15vh;
+}
