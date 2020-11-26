@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { faClock, faEllipsisH, faHeart, faList, faPlay, faShareAlt, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faCheckCircle, faClock, faEllipsisH, faHeart, faList, faPlay, faShareAlt, faStar } from '@fortawesome/free-solid-svg-icons';
 import { Comment } from '../detail/Comment';
+import { Episode } from './Episode';
 
 @Component({
   selector: 'app-detail-podcast',
@@ -16,6 +17,7 @@ export class DetailPodcastComponent implements OnInit {
   faPlay = faPlay;
   faList = faList;
   faDots = faEllipsisH;
+  faChecked = faCheckCircle;
 
   comments: Comment[] = [{
     username: "Roberto", 
@@ -26,6 +28,15 @@ export class DetailPodcastComponent implements OnInit {
     username: "Carla", 
     stars: 3,
     comment: "Meh"
+  }
+]
+
+  episodes: Episode[] = [{
+    name: "Magia nos sobra",
+    seen: true
+  },{
+    name: "El canon te da y te quita",
+    seen: false
   }
 ]
 
