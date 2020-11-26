@@ -1,4 +1,4 @@
-<nav>
+<nav id="mobile">
     <a class="icono-left" href="#">
         <img src="./assets/iconos/arrow.svg" width="25" height="25" alt="" loading="lazy">
     </a>
@@ -61,4 +61,96 @@
         </a>
     </div>
 
+</div>
+
+<nav id="desktop">
+    <a class="icono-left" href="#">
+        <img src="./assets/iconos/Search.svg" width="40" height="40" alt="" loading="lazy">
+    </a>
+
+    <input type="text" class="redondeadonorelieve" value="Buscar">
+
+    <a class="btnfilter" (click)="clickFiltro()">
+        <img src="./assets/iconos/Filter.svg" height="40" alt="" loading="lazy">
+    </a>
+
+    <img id="perfil" src="./assets/iconos/img-perfil.png" alt="" (click)="clickPerfil()">
+    <a class="icono" href="#">
+        <img src="./assets/iconos/Vector-2.svg" width="40" height="40" class="align-top logo" alt="" loading="lazy">
+    </a>
+
+    <div id="filterMenu" [style.visibility]="visibleFilter()">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+                Artista
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+                Album
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+                Cancion
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+                Playlist
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+                Podcast
+            </label>
+        </div>
+        <label for="miselect">Genero</label>
+        <select class="custom-select" name="miselect" [(ngModel)]="seleccionadoGenero">
+            <option selected>Open this select menu</option>
+            <option [value]="item" *ngFor="let item of genero">{{item}}</option>
+        </select>
+
+        <label for="miselect">Decada</label>
+        <select class="custom-select" name="miselect" [(ngModel)]="seleccionadoDecada">
+            <option selected>Open this select menu</option>
+            <option [value]="item" *ngFor="let item of decadas">{{item}}</option>
+        </select>
+    </div>
+
+
+
+</nav>
+
+<div id="menuPerfil" [style.visibility]="visibleMenuPerfil()">
+    <div class="lista">
+        <a href="#">
+            <h3>Mi Música</h3>
+        </a>
+    </div>
+    <div class="lista">
+        <a href="#">
+            <h3>Mi Cuenta</h3>
+        </a>
+    </div>
+    <div class="lista">
+        <a href="#">
+            <h3>Premium</h3>
+        </a>
+    </div>
+    <div class="lista">
+        <a href="#">
+            <h3>Configuración</h3>
+        </a>
+    </div>
+    <div class="lista">
+        <a href="#">
+            <h3>Ayuda</h3>
+        </a>
+    </div>
 </div>
