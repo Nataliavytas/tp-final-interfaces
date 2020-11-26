@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LandingNavbarComponent } from './landing-navbar/landing-navbar.component';
@@ -11,11 +10,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MusicReproductorComponent } from './music-reproductor/music-reproductor.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AppRoutingModule } from './app-routing.module';
-import { DetailComponent } from './detail/detail.component';
 import { DetailSongComponent } from './detail-song/detail-song.component';
 import { DetailPlaylistComponent } from './detail-playlist/detail-playlist.component';
 import { DetailPodcastComponent } from './detail-podcast/detail-podcast.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
+import { PlaylistItemComponent } from './playlist-item/playlist-item.component';
+
 
 
 
@@ -30,16 +30,20 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
     HomeComponent,
     MusicReproductorComponent,
     NavBarComponent,
-    DetailComponent,
     DetailSongComponent,
     DetailPlaylistComponent,
-    DetailPodcastComponent
+    DetailPodcastComponent,
+    PlaylistItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+<<<<<<< Updated upstream
     FormsModule
+=======
+    FormsModule,
+>>>>>>> Stashed changes
   ],
   providers: [],
   bootstrap: [AppComponent]
