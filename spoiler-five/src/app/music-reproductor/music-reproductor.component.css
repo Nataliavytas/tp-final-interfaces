@@ -1,6 +1,11 @@
 footer {
     height: 100px;
     width: 100vw;
+    background-color: var(--dark-grey);
+    color: white;
+    border-width: 1px;
+    border-top-style: solid;
+    border-top-color: coral;
 }
 
 .icon {
@@ -23,6 +28,14 @@ button {
     background-color: transparent;
     border: none;
     color: black;
+}
+
+.star :hover{
+    color: yellow;
+}
+
+.corazon :hover{
+    color: rgba(250, 39, 39, 0.822);
 }
 
 @media only screen and (min-width: 420px) {
