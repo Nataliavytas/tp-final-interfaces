@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row d-none d-md-flex">
     <div class="col-3">
         <app-left-navigation-bar> </app-left-navigation-bar>
     </div>
@@ -76,7 +76,79 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
+
+<app-nav-bar></app-nav-bar>
+<div class="mobile-display d-block d-md-none">
+    <div class="row">
+        <!-- <div class="col-6 bg-primary">
+            <img src="../../assets/small-pic.png" height="" alt="">
+            <p>puntua este contenido</p>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+        </div>
+        <div class="col-6 bg-warning">
+            <h2>Titulo de la cancion</h2>
+            <p>by Artista </p>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            3.75 - <span>detalle de la puntuacion</span>
+            <p>RELEASE DATE 26-01-2016</p>
+        </div> -->
+    </div>
+
+    <ul class="nav nav-tabs mt-3">
+        <li class="active"><a data-toggle="tab" href="#home">Episodios</a></li>
+        <li><a data-toggle="tab" href="#menu1">Actividad </a></li>
+        <li><a data-toggle="tab" href="#menu2">Comentar</a></li>
+    </ul>
+
+    <div class="tab-content mx-3">
+        <div id="home" class="tab-pane fade in active">
+            <table class="table">
+                <tbody>
+                    <tr *ngFor="let ep of episodes">
+                        <td>
+                            <fa-icon [icon]="faPlay"> </fa-icon>
+                        </td>
+                        <td>
+                            {{ep.name}}
+                        </td>
+                        <td>
+                            <fa-icon *ngIf="ep.seen" [icon]="faChecked"> </fa-icon>
+                        </td>
+                        <td>
+                            <fa-icon [icon]="faDots"></fa-icon>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+            <div class="m-2 bordered">
+                <div class="row m-2" *ngFor="let comment of comments">
+                    <div class="bg-success">
+                        <p> {{ comment.username}} puntuo {{comment.stars}} </p>
+                        <p *ngIf="comment.comment != ''"> {{comment.comment}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+            <div class="row m-5">
+                <h2>Comenta! </h2>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <button class="primary-button text-center my-3"> Opinar</button>
+            </div>
+        </div>
 
     </div>
 </div>
