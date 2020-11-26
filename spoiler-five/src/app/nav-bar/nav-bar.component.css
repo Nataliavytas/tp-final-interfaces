@@ -1,5 +1,5 @@
-
 #mobile{
+    width: 100vw;
     height: 3.5rem;
     background-color: var(--dark-grey);
     box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.2);
@@ -42,7 +42,7 @@
     position: fixed;
 	top: 0;
 	bottom: 0;
-    right:-300px;
+    right: 1%;
     transition: all 0.75s ease;
     z-index: 2;
     opacity: 95%;
@@ -151,7 +151,14 @@
 
 @media only screen and (max-width: 899px){
     #desktop{
-       visibility: hidden;
+       display: none;
+    }
+    #menuPerfil{
+        display: none;
+    }
+
+    #filterMenu{
+        display: none;
     }
 }
 @media only screen and (min-width: 420px) {
@@ -167,12 +174,24 @@
         left: 45%;
     }
 
-    #menu{
-        right: -550px;
-    }
+    #desktop{
+        display: none;
+     }
+     #menuPerfil{
+         display: none;
+     }
+ 
+     #filterMenu{
+         display: none;
+     }
+
+     #menu{
+         right: -550px;
+     }
+
 }
 
-@media only screen and (min-width: 994px) {
+@media only screen and (min-width: 899px) {
      #mobile{
         display: none;
     }
@@ -182,7 +201,7 @@
     }
 
     #desktop{
-        visibility: visible;
+        display: inline-block;
     }
 
     .icono{

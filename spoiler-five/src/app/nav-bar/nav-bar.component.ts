@@ -20,7 +20,7 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit(): void {
     this.visible = false;
-    this.pixeles = '-300px';
+    this.pixeles = '-550px';
     this.visibleMenu = 'hidden';
     this.visiblePerfil = 'hidden';
   }
@@ -66,7 +66,7 @@ export class NavBarComponent implements OnInit {
     if (!this._eref.nativeElement.contains(event.target)) {
       if (this.visible) {
         let menu = document.querySelector("#menu");
-        this.pixeles = '-300px';
+        this.pixeles = '-550px';
         this.visible = false;
       }
     }
