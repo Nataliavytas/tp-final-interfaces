@@ -1,6 +1,6 @@
 #mobile{
     width: 100vw;
-    height: 3.5rem;
+    height: 5rem;
     background-color: var(--dark-grey);
     box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.2);
     z-index: 1;
@@ -9,7 +9,7 @@
     width: auto;
     position: absolute;
     left: 35%;
-    top: 1%;
+    margin-top: 1.5%;
     font-family: 'Sansita', sans-serif;
     font-style: normal;
     font-weight: normal;
