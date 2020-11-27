@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faClock, faEllipsisH, faHeart, faList, faPlay, faShareAlt, faStar } from '@fortawesome/free-solid-svg-icons';
 import { Comment } from '../detail/Comment';
+import { Song } from './Song';
 
 @Component({
   selector: 'app-detail-playlist',
@@ -28,6 +29,21 @@ export class DetailPlaylistComponent implements OnInit {
     stars: 3,
     comment: "Meh"
   }
+]
+
+songs: Song[] = [{
+    name: "Algun nombre", 
+    artist:"Corpse",
+    album: "el mas nuevo", 
+    release: "26-01-2020",
+    favorite: true,
+},{
+  name: "Nombre 2",
+  artist:"string",
+  album: "string", 
+  release: "21-02-2016",
+  favorite: false,
+}
 ]
 
 

@@ -1,39 +1,44 @@
-<div class="row d-none d-md-flex">
+<div class="fixed-top">
+    <app-nav-bar></app-nav-bar>
+</div>
+<div class="row d-none d-md-flex desktop-display">
     <div class="col-3">
         <app-left-navigation-bar> </app-left-navigation-bar>
     </div>
 
     <div class="col-9">
         <div class="row mt-5">
-            <div class="col-10 bg-dark">
+            <div class="col-10">
                 <div class="row">
-                    <div class="col-3 bg-primary">
+                    <div class="col-3 user-review text-center">
                         <img src="../../assets/small-pic.png" height="193" alt="">
-                        <p>puntua este contenido</p>
+                        <p>Puntua este contenido! </p>
                         <fa-icon [icon]="faStar"> </fa-icon>
                         <fa-icon [icon]="faStar"> </fa-icon>
                         <fa-icon [icon]="faStar"> </fa-icon>
                         <fa-icon [icon]="faStar"> </fa-icon>
                         <fa-icon [icon]="faStar"> </fa-icon>
                     </div>
-                    <div class="col-7 bg-warning">
+                    <div class="col-6 song-details">
+                        <p class="type pt-2">PLAYLIST</p>
                         <h2>Titulo de la cancion</h2>
-                        <p>by Artista </p>
-                        <fa-icon [icon]="faStar"> </fa-icon>
-                        <fa-icon [icon]="faStar"> </fa-icon>
-                        <fa-icon [icon]="faStar"> </fa-icon>
-                        <fa-icon [icon]="faStar"> </fa-icon>
-                        <fa-icon [icon]="faStar"> </fa-icon>
-                        3.75 - <span>detalle de la puntuacion</span>
-                        <p>RELEASE DATE 26-01-2016</p>
-                    </div>
-                    <div class="col-2 bg-danger">
-                        <div>
-                            2:59
-                            <fa-icon [icon]="faClock"> </fa-icon>
+                        <p> <span> by </span> Artista </p>
+                        <div class="pt-3 song-rating">
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                            3.75 <span class="pl-5"> Ver detalle de la puntuacion</span>
                         </div>
+                    </div>
+                    <div class="col-3 right-icons text-right">
                         <div>
-                            <fa-icon [icon]="faShare"> </fa-icon>
+                            2 canciones, 4 minutos
+                            <fa-icon [icon]="faClock" class="ml-3"> </fa-icon>
+                        </div>
+                        <div class="mt-4">
+                            <fa-icon [icon]="faShare" class="mx-5"> </fa-icon>
                             <fa-icon [icon]="faHeart"> </fa-icon>
                         </div>
                     </div>
@@ -42,21 +47,29 @@
         </div>
 
         <div class="row">
-            <div class="col-10 bordered mt-5">
+            <div class="col-10 bordered mt-5 pb-5">
                 <div class="row m-5">
-                    <img src="../../assets/small-pic.png" class="rounded-circle" alt="">
+                    <img src="../../assets/small-pic.png" class="rounded-circle mr-" alt="">
                     <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <button class="primary-button text-center"> Opinar</button>
                 </div>
-                <div class="row my-2" *ngFor="let comment of comments">
-                    <div class="bg-success">
-                        <p> {{ comment.username}} puntuo {{comment.stars}} </p>
-                        <p *ngIf="comment.comment != ''"> {{comment.comment}}</p>
+                <button class="primary-button text-center float-right mr-5"> Opinar</button>
+                <div class="row my-2 mt-5" *ngFor="let comment of comments">
+                    <div class="mx-5 px-4 my-1 comentario">
+                        <p> <span class="mr-3">{{ comment.username}}</span> puntuó <span class="ml-3"> 
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                        </span></p>
+                        <p *ngIf="comment.comment != ''" class="ml-4"> {{comment.comment}}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
 <app-music-reproductor> </app-music-reproductor>
