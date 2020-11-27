@@ -5,40 +5,59 @@
         <app-left-navigation-bar> </app-left-navigation-bar>
     </div>
     <div class="col-9" id="body">
+        <p>Resultados de la Busqueda para Dua Lipa</p>
         <div class="row my-5">
             <div>
                 <h1>Canciones</h1>
             </div>
-            <div class="first-carousel">
-                <div id="carouselNovedades" class="carousel slide" data-interval="false">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <app-playlist-item> </app-playlist-item>
-                                <app-playlist-item> </app-playlist-item>
-                                <app-playlist-item> </app-playlist-item>
-                                <app-playlist-item> </app-playlist-item>
-                                <app-playlist-item> </app-playlist-item>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <app-playlist-item> </app-playlist-item>
-                                <app-playlist-item> </app-playlist-item>
-                                <app-playlist-item> </app-playlist-item>
-                                <app-playlist-item> </app-playlist-item>
-                                <app-playlist-item> </app-playlist-item>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselNovedades" role="button" data-slide="prev">
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselNovedades" role="button" data-slide="next">
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
+
+            <table class="table mt-4">
+                <thead>
+                    <th>
+
+                    </th>
+                    <th>
+                        TITLE
+                    </th>
+                    <th>
+                        ARTIST
+                    </th>
+                    <th>ALBUM</th>
+                    <th>
+                        RELEASE DATE
+                    </th>
+                    <th>
+
+                    </th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let song of songs">
+                        <td>
+                            <fa-icon [icon]="faPlay"> </fa-icon>
+                        </td>
+                        <td>
+                            {{song.name}}
+                        </td>
+                        <td>
+                            {{song.artist}}
+                        </td>
+                        <td>
+                            {{song.album}}
+                        </td>
+                        <td>
+                            {{song.release}}
+                        </td>
+                        <td class="text-right">
+                            <fa-icon *ngIf="song.favorite" [icon]="faHeart"> </fa-icon>
+                            <fa-icon [icon]="faList" class="mx-4"> </fa-icon>
+                            <fa-icon [icon]="faDots"></fa-icon>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <a class="icono-left">
+                <span>+ Ver Mas</span>
+            </a>
         </div>
 
         <div class="row  my-5">
@@ -110,8 +129,33 @@
 
 <!-- MOBILE -->
 <div id="mobile">
+
     <div class="mt-5 pt-4">
+        <p>Resultados de la Busqueda para Dua Lipa</p>
         <h2>Canciones</h2>
+
+        <table class="table">
+            <thead>
+
+            </thead>
+            <tbody>
+                <tr *ngFor="let song of songs">
+                    <td>
+                        <fa-icon [icon]="faPlay"> </fa-icon>
+                    </td>
+                    <td>
+                        {{song.name}}
+                    </td>
+                    <td class="text-right">
+                        <fa-icon *ngIf="song.favorite" [icon]="faHeart" class="mx-5"> </fa-icon>
+                        <fa-icon [icon]="faDots"></fa-icon>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="icono-left">
+            <span>+ Ver Mas</span>
+        </a>
     </div>
 
     <div class="mt-5 pt-4">
@@ -177,6 +221,9 @@
             </div>
         </div>
     </div>
-
+    <br>
+    <br>
+    <br>
+    <br>
 </div>
 <app-music-reproductor></app-music-reproductor>
