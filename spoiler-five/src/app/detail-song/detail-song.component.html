@@ -13,11 +13,21 @@
                     <div class="col-3 user-review text-center">
                         <img src="../../assets/small-pic.png" height="193" alt="">
                         <p>Puntua este contenido! </p>
-                        <fa-icon [icon]="faStar"> </fa-icon>
-                        <fa-icon [icon]="faStar"> </fa-icon>
-                        <fa-icon [icon]="faStar"> </fa-icon>
-                        <fa-icon [icon]="faStar"> </fa-icon>
-                        <fa-icon [icon]="faStar"> </fa-icon>
+                        <a class="star" (click)="clickAddTodo(1)" [style.color]="getcolor()">
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                        </a>
+                        <a class="star" (click)="clickAddTodo(2)" [style.color]="getcolor2()">
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                        </a>
+                        <a class="star" (click)="clickAddTodo(3)" [style.color]="getcolor3()">
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                        </a>
+                        <a class="star" (click)="clickAddTodo(4)" [style.color]="getcolor4()">
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                        </a>
+                        <a class="star" (click)="clickAddTodo(5)" [style.color]="getcolor5()">
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                        </a>
                     </div>
                     <div class="col-6 song-details">
                         <p class="type pt-2">PLAYLIST</p>
@@ -89,11 +99,21 @@
     <div class="row container">
         <div class="col-6 user-review text-center">
             <p>Tu valoracion:</p>
-            <fa-icon [icon]="faStar"> </fa-icon>
-            <fa-icon [icon]="faStar"> </fa-icon>
-            <fa-icon [icon]="faStar"> </fa-icon>
-            <fa-icon [icon]="faStar"> </fa-icon>
-            <fa-icon [icon]="faStar"> </fa-icon>
+            <a class="star" (click)="clickAddTodo(1)" [style.color]="getcolor()">
+                <fa-icon [icon]="faStar"> </fa-icon>
+            </a>
+            <a class="star" (click)="clickAddTodo(2)" [style.color]="getcolor2()">
+                <fa-icon [icon]="faStar"> </fa-icon>
+            </a>
+            <a class="star" (click)="clickAddTodo(3)" [style.color]="getcolor3()">
+                <fa-icon [icon]="faStar"> </fa-icon>
+            </a>
+            <a class="star" (click)="clickAddTodo(4)" [style.color]="getcolor4()">
+                <fa-icon [icon]="faStar"> </fa-icon>
+            </a>
+            <a class="star" (click)="clickAddTodo(5)" [style.color]="getcolor5()">
+                <fa-icon [icon]="faStar"> </fa-icon>
+            </a>
         </div>
         <div class="col-6 text-right pt-5 right-icons">
             <fa-icon [icon]="faHeart" class="mx-5"> </fa-icon>

@@ -27,10 +27,13 @@ textarea {
     color: white;
 }
 
+.star :hover {
+    color: yellow;
+}
+
 @media only screen and (min-width: 420px) {
     .user-review fa-icon {
         font-size: 30px;
-        color: #E1914B;
     }
     .user-review p {
         margin: 0;
@@ -136,6 +139,5 @@ textarea {
     }
     .right-icons fa-icon {
         font-size: 24px;
-        color: #FC947D;
     }
 }
