@@ -15,7 +15,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-front">
-                                    <img src="../../assets/album.png" height="193" alt="">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHWl5QZqfR1vN1d5HGvy0-hBss98OoJCVPVX7FvuJZwgThzDsnRWeMcI4nVP-mg-p_5Ipdp3Mxn0G6HAznFp8mvS7oMD6ViAQ&usqp=CAU&ec=45732302" height="193" alt="">
                                 </div>
                                 <div class="card-back bg-dark">
                                     <p class="card-body">
@@ -46,8 +46,8 @@
                     </div>
                     <div class="col-6 song-details">
                         <p class="type pt-2">CANCION</p>
-                        <h2>Titulo de la cancion</h2>
-                        <p> <span> by </span> Artista </p>
+                        <h2>Black Mirror</h2>
+                        <p> <span> by </span> Sire </p>
                         <div class="pt-3 song-rating">
                             <fa-icon [icon]="faStar"> </fa-icon>
                             <fa-icon [icon]="faStar"> </fa-icon>
@@ -80,13 +80,9 @@
                 <button class="primary-button text-center float-right mr-5"> Opinar</button>
                 <div class="row my-2 mt-5" *ngFor="let comment of comments">
                     <div class="mx-5 px-4 my-1 comentario">
-                        <p> <span class="mr-3">{{ comment.username}}</span> puntuó <span class="ml-3"> 
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                        </span></p>
+                        <p> <span class="mr-3">{{ comment.username}}</span> puntuó <span class="mx-2"> 
+                            <fa-icon [icon]="faStar" *ngFor="let star of comment.stars"> </fa-icon> 
+                        </span> </p>
                         <p *ngIf="comment.comment != ''" class="ml-4"> {{comment.comment}}</p>
                     </div>
                 </div>
@@ -98,11 +94,11 @@
 <div class="mobile-display d-block d-md-none mt-4">
     <div class="row pt-5 mt-5 song-header">
         <div class="col-6 text-center pt-5">
-            <img src="../../assets/small-pic.png" height="118" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHWl5QZqfR1vN1d5HGvy0-hBss98OoJCVPVX7FvuJZwgThzDsnRWeMcI4nVP-mg-p_5Ipdp3Mxn0G6HAznFp8mvS7oMD6ViAQ&usqp=CAU&ec=45732302" height="118" alt="">
         </div>
         <div class="col-6 text-center song-details pt-5">
-            <h4>Titulo de la cancion</h4>
-            <p> <span> by </span> Artista </p>
+            <h2>Black Mirror</h2>
+            <p> <span> by </span> Sire </p>
             <fa-icon [icon]="faStar"> </fa-icon>
             <fa-icon [icon]="faStar"> </fa-icon>
             <fa-icon [icon]="faStar"> </fa-icon>
@@ -140,12 +136,10 @@
         <div class="bordered container">
             <div class="row p-4" *ngFor="let comment of comments">
                 <div class="py-2 comentario">
-                    <p> <span class="mr-2">{{ comment.username}} </span> puntuó <span class="mx-2"> 
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon></span> </p>
+                    <p> <span class="mr-2">{{ comment.username}} </span> puntuó
+                        <span class="mx-2"> 
+                            <fa-icon [icon]="faStar" *ngFor="let star of comment.stars"> </fa-icon> 
+                        </span> </p>
                     <p *ngIf="comment.comment !='' "> {{comment.comment}}</p>
                 </div>
             </div>

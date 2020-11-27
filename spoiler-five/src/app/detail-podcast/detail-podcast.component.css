@@ -208,6 +208,9 @@ table fa-icon {
         font-size: 14px;
         color: #FC947D;
     }
+    #actividad .bordered {
+        margin-bottom: 50px;
+    }
 }
 
 

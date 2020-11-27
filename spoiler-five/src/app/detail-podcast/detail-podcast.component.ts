@@ -24,23 +24,43 @@ export class DetailPodcastComponent implements OnInit {
   faDots = faEllipsisH;
   faChecked = faCheckCircle;
 
-  comments: Comment[] = [{
-    username: "Roberto", 
-    stars: 1,
-    comment: "Una cagada la verdad"
+  comments: Comment[] = [
+  {
+    username: "loki", 
+    stars: [1],
+    comment: "No me gusto para nada, la chica que habla es super irritante. "
+  }, 
+  { 
+    username: "hulk_123", 
+    stars: [1,2],
+    comment: ""
   },
   {
-    username: "Carla", 
-    stars: 3,
-    comment: "Meh"
-  }
+    username: "natalia_vytas", 
+    stars: [1,2,3,4],
+    comment: "La verdad me gusto muchisimo. Muy buen podcast "
+  },
+  {
+    username: "thor", 
+    stars: [1,2,3],
+    comment: "No soy muy fan de los podcast pero este es bastante entretenido."
+  },
 ]
 
   episodes: Episode[] = [{
-    name: "Magia nos sobra",
+    name: "Arte como forma de vida",
     seen: true
   },{
-    name: "El canon te da y te quita",
+    name: "Creatividad y mi yo creativo. ",
+    seen: true
+  },{
+    name: "Bloqueo de artista",
+    seen: true
+  },{
+    name: "El desarrollo del ser",
+    seen: false
+  },{
+    name: "Crear por crear",
     seen: false
   }
 ]

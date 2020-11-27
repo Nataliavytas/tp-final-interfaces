@@ -76,6 +76,9 @@ table .table-icon {
     table th {
         font-size: 12px;
     }
+    h1 {
+        font-size: 35px;
+    }
 }
 
 @media only screen and (max-width: 419px) {

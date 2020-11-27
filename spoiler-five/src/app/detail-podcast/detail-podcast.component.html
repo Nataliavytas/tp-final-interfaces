@@ -14,7 +14,8 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-front">
-                                    <img src="../../assets/album.png" height="193" alt="">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/5a7b4f21b07869771e2c1461/1573968639452-BZSMUKQRNR0ZVTEE9CH1/ke17ZwdGBToddI8pDm48kNiEM88mrzHRsd1mQ3bxVct7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0s0XaMNjCqAzRibjnE_wBlkZ2axuMlPfqFLWy-3Tjp4nKScCHg1XF4aLsQJlo6oYbA/Podcast_Cover.jpg"
+                                        height="193" alt="">
                                 </div>
                                 <div class="card-back bg-dark">
                                     <p class="card-body">
@@ -44,8 +45,8 @@
                     </div>
                     <div class="col-7 podcast-details">
                         <p class="type pt-2">PODCAST</p>
-                        <h2>Titulo del podcast</h2>
-                        <p> <span> by </span> Artista </p>
+                        <h2>The Striving Artist</h2>
+                        <p> <span> by </span> 2B </p>
                         <div class="pt-3 podcast-rating">
                             <fa-icon [icon]="faStar"> </fa-icon>
                             <fa-icon [icon]="faStar"> </fa-icon>
@@ -56,7 +57,7 @@
                         </div>
                         <p class="label-podcast">RELEASE DATE: <span class="mx-4">  26-01-2016 </span></p>
                         <p class="label-podcast">ABOUT: </p>
-                        <p>Podcast relacionado con el mundo del desarrollo web y la programacion en general. Charlas, guias, trucos y mucho mas.</p>
+                        <p>Podcast relacionado con el mundo del arte. Charlas, guias, trucos y mucho mas.</p>
                     </div>
                     <div class="col-2 right-icons text-right">
                         <div>
@@ -102,13 +103,9 @@
                 <button class="primary-button text-center float-right mr-5"> Opinar</button>
                 <div class="row my-2 mt-5" *ngFor="let comment of comments">
                     <div class="mx-5 px-4 my-1 comentario">
-                        <p> <span class="mr-3">{{ comment.username}}</span> puntuó <span class="ml-3"> 
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                        </span></p>
+                        <p> <span class="mr-3">{{ comment.username}}</span> puntuó <span class="mx-2"> 
+                            <fa-icon [icon]="faStar" *ngFor="let star of comment.stars"> </fa-icon> 
+                        </span> </p>
                         <p *ngIf="comment.comment != ''" class="ml-4"> {{comment.comment}}</p>
                     </div>
                 </div>
@@ -122,11 +119,12 @@
 <div class="mobile-display d-block d-md-none mt-4">
     <div class="row pt-5 mt-5 podcast-header">
         <div class="col-6 text-center pt-5">
-            <img src="../../assets/small-pic.png" height="118" alt="">
+            <img src="https://images.squarespace-cdn.com/content/v1/5a7b4f21b07869771e2c1461/1573968639452-BZSMUKQRNR0ZVTEE9CH1/ke17ZwdGBToddI8pDm48kNiEM88mrzHRsd1mQ3bxVct7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0s0XaMNjCqAzRibjnE_wBlkZ2axuMlPfqFLWy-3Tjp4nKScCHg1XF4aLsQJlo6oYbA/Podcast_Cover.jpg"
+                height="118" alt="">
         </div>
         <div class="col-6 text-center podcast-details pt-5">
-            <h4>Titulo de la cancion</h4>
-            <p>by Artista </p>
+            <h4>The Striving Artist</h4>
+            <p>by 2B </p>
             <fa-icon [icon]="faStar"> </fa-icon>
             <fa-icon [icon]="faStar"> </fa-icon>
             <fa-icon [icon]="faStar"> </fa-icon>
@@ -197,11 +195,8 @@
                 <div class="row p-4" *ngFor="let comment of comments">
                     <div class="py-2 comentario">
                         <p> <span class="mr-2">{{ comment.username}} </span> puntuó <span class="mx-2"> 
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                            <fa-icon [icon]="faStar"> </fa-icon></span> </p>
+                            <fa-icon [icon]="faStar" *ngFor="let star of comment.stars"> </fa-icon> 
+                        </span> </p>
                         <p *ngIf="comment.comment !='' "> {{comment.comment}}</p>
                     </div>
                 </div>
