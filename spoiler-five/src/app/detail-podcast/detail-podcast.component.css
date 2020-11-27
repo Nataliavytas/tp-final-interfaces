@@ -36,6 +36,10 @@ table fa-icon {
     font-size: 20px;
 }
 
+.star :hover {
+    color: yellow;
+}
+
 @media only screen and (min-width: 420px) {
     table {
         font-size: 16px;
@@ -45,7 +49,6 @@ table fa-icon {
     }
     .user-review fa-icon {
         font-size: 30px;
-        color: #E1914B;
     }
     .user-review p {
         margin: 0;
@@ -121,30 +124,6 @@ table fa-icon {
         color: white !important;
     }
 }
-
-
-/* @media only screen and (max-width: 420px) {
-    textarea {
-        height: 126px;
-        width: 90%;
-        resize: none;
-    }
-    .bordered {
-        border-radius: 22px;
-        border: 2px black solid;
-    }
-    .primary-button {
-        width: 128px;
-        height: 22px;
-        border-radius: 100px;
-    }
-    .row {
-        max-width: 100vw;
-    }
-    .mobile-display {
-        margin-bottom: 25%;
-    }
-} */
 
 @media only screen and (max-width: 420px) {
     table {
