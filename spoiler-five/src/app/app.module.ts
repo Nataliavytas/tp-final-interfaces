@@ -39,7 +39,7 @@ import { PlaylistItemComponent } from './playlist-item/playlist-item.component';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    FormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
