@@ -1,5 +1,8 @@
 p {
     margin: 0;
+    background: -webkit-linear-gradient(#FC947D 0%, #FB7079 53.65%, #FA5075 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .square {

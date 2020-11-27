@@ -27,6 +27,7 @@ h1{
 
 table {
     color: white;
+    z-index: 1;
 }
 
 table th {
