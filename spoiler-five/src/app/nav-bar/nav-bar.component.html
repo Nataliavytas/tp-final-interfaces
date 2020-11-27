@@ -4,7 +4,7 @@
         <img src="./assets/iconos/arrow.svg" width="25" height="25" alt="" loading="lazy">
     </a>
 
-    <a class="logoSpoiler" href="#">
+    <a class="logoSpoiler" [routerLink]="['/home']">
         <img src="./assets/iconos/logo.png" width="40" height="40" alt="" loading="lazy"> Spoiler Five
     </a>
 
@@ -17,7 +17,7 @@
             loading="lazy">
     </a>
 
-    <a class="icono" href="#">
+    <a class="icono" [routerLink]="['/buscar']">
         <img src="./assets/iconos/Vector.svg" width="25" height="25" class="align-top logo" alt="" loading="lazy">
     </a>
 
@@ -71,6 +71,8 @@
     </a>
 
     <input type="text" class="redondeadonorelieve" value="Buscar">
+
+    <button class="boton" [routerLink]="['/resultado']">Ir</button>
 
     <a class="btnfilter" (click)="clickFiltro()">
         <img src="./assets/iconos/Filter.svg" height="40" alt="" loading="lazy">

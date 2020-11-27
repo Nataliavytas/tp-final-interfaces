@@ -20,6 +20,18 @@
     -webkit-text-fill-color: transparent; 
 }
 
+.boton{
+    margin-left: 1%;
+    background-color:var(--dark-grey) ;
+    background: -webkit-linear-gradient(#FC947D 0%, #FB7079 53.65%, #FA5075 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    border-width: 1px;
+    border-style: solid;
+    border-color: coral;
+    border-radius: 5px;
+}
+
 .icono{
     width: auto;
     float: right;

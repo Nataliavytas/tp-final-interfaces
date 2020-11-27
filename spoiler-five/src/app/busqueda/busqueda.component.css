@@ -1,6 +1,6 @@
 .busqueda{
     background-color: var(--dark-grey);
-    top: 2.5rem;
+    margin-top: 5rem;
     height: 80vh;
     width: 100%;
 }
@@ -8,20 +8,19 @@
 .inpBusqueda{
     width: 60vw;
     height: 2rem;
-    left: 20%;
-    right: 25%;
+    left: 15%;
     top: 10%;
+    z-index: 0;
 }
 
 .inpBusqueda input{
+    width: 55vw;
     background: white;
     border-radius: 100px;
     border-style: solid;
     border-width: 1px;
     border-color: coral;
-}
-.inpBusqueda img{
-    margin: 5%;
+    margin-right: 2%;
 }
 
 label{
