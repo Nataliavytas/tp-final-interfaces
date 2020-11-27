@@ -5,7 +5,7 @@ footer {
     color: white;
     border-width: 1px;
     border-top-style: solid;
-    border-top-color: coral;
+    border-top-color: var(--primary-color);
 }
 
 #expandido{
@@ -15,7 +15,7 @@ footer {
     color: white;
     border-width: 1px;
     border-top-style: solid;
-    border-top-color: coral;
+    border-top-color: var(--primary-color);
     border-radius: 5px;
     z-index: 30;
 }

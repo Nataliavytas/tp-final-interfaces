@@ -1,0 +1,32 @@
+#body{
+    top: 6rem;
+    bottom: 10rem;
+}
+.first-carousel {
+    width: 100%;
+}
+
+.last-row {
+    margin-bottom: 30%;
+}
+
+#mobile{
+    margin: 5%;
+}
+
+@media only screen and (min-width: 420px) {
+    .last-row {
+        margin-bottom: 15%;
+    }
+
+    #mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 419px) {
+    
+    #mobile{
+        display: inline-block;
+    }
+}
