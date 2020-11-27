@@ -18,4 +18,15 @@
     .last-row {
         margin-bottom: 15%;
     }
+
+    #mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 419px) {
+    
+    #mobile{
+        display: inline-block;
+    }
 }
