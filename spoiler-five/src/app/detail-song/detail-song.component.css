@@ -31,6 +31,10 @@ textarea {
     color: yellow;
 }
 
+.fixed-top {
+    height: 100px;
+}
+
 @media only screen and (min-width: 420px) {
     .user-review fa-icon {
         font-size: 30px;
@@ -140,4 +144,76 @@ textarea {
     .right-icons fa-icon {
         font-size: 24px;
     }
+}
+
+
+/*flip card */
+
+.card {
+    background-color: var(--dark-grey);
+    position: relative;
+    width: 210px;
+    height: 210px;
+    cursor: pointer;
+    float: right;
+    border: none;
+}
+
+.card:hover .card-content {
+    transform: rotateY(.5turn);
+}
+
+.card-content {
+    height: 150px;
+    text-align: center;
+    position: relative;
+    padding: 5rem;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card-back p {
+    margin-top: 50px;
+}
+
+.card-back,
+.card-front {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    width: 193px;
+    height: 193px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.card-front {
+    background-size: cover;
+}
+
+.card-front::before {
+    position: absolute;
+    top: 1em;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+    transform: translateZ(3rem)
+}
+
+.card-back {
+    transform: rotateY(.5turn);
+}
+
+.card-body {
+    font-size: 1.3rem !important;
+    transform: translateZ(3rem);
+}
+
+.card-body fa-icon {
+    color: #FC947D;
 }

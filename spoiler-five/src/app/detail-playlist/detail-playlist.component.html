@@ -11,23 +11,36 @@
             <div class="col-10">
                 <div class="row">
                     <div class="col-3 user-review text-center">
-                        <img src="../../assets/small-pic.png" height="193" alt="">
-                        <p>Puntua este contenido! </p>
-                        <a class="star" (click)="clickAddTodo(1)" [style.color]="getcolor()">
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                        </a>
-                        <a class="star" (click)="clickAddTodo(2)" [style.color]="getcolor2()">
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                        </a>
-                        <a class="star" (click)="clickAddTodo(3)" [style.color]="getcolor3()">
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                        </a>
-                        <a class="star" (click)="clickAddTodo(4)" [style.color]="getcolor4()">
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                        </a>
-                        <a class="star" (click)="clickAddTodo(5)" [style.color]="getcolor5()">
-                            <fa-icon [icon]="faStar"> </fa-icon>
-                        </a>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-front">
+                                    <img src="../../assets/album.png" height="193" alt="">
+                                </div>
+                                <div class="card-back bg-dark">
+                                    <p class="card-body">
+                                        <fa-icon [icon]="faPlay" class="play-icon"> </fa-icon>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Puntua este contenido! </p>
+                            <a class="star" (click)="clickAddTodo(1)" [style.color]="getcolor()">
+                                <fa-icon [icon]="faStar"> </fa-icon>
+                            </a>
+                            <a class="star" (click)="clickAddTodo(2)" [style.color]="getcolor2()">
+                                <fa-icon [icon]="faStar"> </fa-icon>
+                            </a>
+                            <a class="star" (click)="clickAddTodo(3)" [style.color]="getcolor3()">
+                                <fa-icon [icon]="faStar"> </fa-icon>
+                            </a>
+                            <a class="star" (click)="clickAddTodo(4)" [style.color]="getcolor4()">
+                                <fa-icon [icon]="faStar"> </fa-icon>
+                            </a>
+                            <a class="star" (click)="clickAddTodo(5)" [style.color]="getcolor5()">
+                                <fa-icon [icon]="faStar"> </fa-icon>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-6 playlist-details">
                         <p class="type pt-2">PLAYLIST</p>
