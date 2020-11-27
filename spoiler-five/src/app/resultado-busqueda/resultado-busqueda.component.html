@@ -35,7 +35,7 @@
                         <td>
                             <fa-icon [icon]="faPlay"> </fa-icon>
                         </td>
-                        <td>
+                        <td [routerLink]="['/song/detail']">
                             {{song.name}}
                         </td>
                         <td>
@@ -60,25 +60,25 @@
             </a>
         </div>
 
-        <div class="row  my-5">
+        <div class="row my-5">
             <h1>Playlist</h1>
             <div class="row">
-                <app-playlist-item> </app-playlist-item>
-                <app-playlist-item> </app-playlist-item>
-                <app-playlist-item> </app-playlist-item>
-                <app-playlist-item> </app-playlist-item>
-                <app-playlist-item> </app-playlist-item>
+                <app-playlist-item [routerLink]="['/playlist/detail']"> </app-playlist-item>
+                <app-playlist-item [routerLink]="['/playlist/detail']"> </app-playlist-item>
+                <app-playlist-item [routerLink]="['/playlist/detail']"> </app-playlist-item>
+                <app-playlist-item [routerLink]="['/playlist/detail']"> </app-playlist-item>
+                <app-playlist-item [routerLink]="['/playlist/detail']"> </app-playlist-item>
             </div>
         </div>
 
         <div class="row mt-5 last-row">
             <h1> Podcast</h1>
             <div class="row">
-                <app-playlist-item> </app-playlist-item>
-                <app-playlist-item> </app-playlist-item>
-                <app-playlist-item> </app-playlist-item>
-                <app-playlist-item> </app-playlist-item>
-                <app-playlist-item> </app-playlist-item>
+                <app-playlist-item [routerLink]="['/podcast/detail']"> </app-playlist-item>
+                <app-playlist-item [routerLink]="['/podcast/detail']"> </app-playlist-item>
+                <app-playlist-item [routerLink]="['/podcast/detail']"> </app-playlist-item>
+                <app-playlist-item [routerLink]="['/podcast/detail']"> </app-playlist-item>
+                <app-playlist-item [routerLink]="['/podcast/detail']"> </app-playlist-item>
             </div>
         </div>
     </div>
@@ -104,7 +104,7 @@
                     <td>
                         <fa-icon [icon]="faPlay"> </fa-icon>
                     </td>
-                    <td>
+                    <td [routerLink]="['/song/detail']">
                         {{song.name}}
                     </td>
                     <td class="text-right">
@@ -122,20 +122,20 @@
     <div class="mt-5 pt-4">
         <h2> Playlist</h2>
         <div class="row">
-            <app-playlist-item> </app-playlist-item>
-            <app-playlist-item> </app-playlist-item>
-            <app-playlist-item> </app-playlist-item>
-            <app-playlist-item> </app-playlist-item>
+            <app-playlist-item [routerLink]="['/playlist/detail']"> </app-playlist-item>
+            <app-playlist-item [routerLink]="['/playlist/detail']"> </app-playlist-item>
+            <app-playlist-item [routerLink]="['/playlist/detail']"> </app-playlist-item>
+            <app-playlist-item [routerLink]="['/playlist/detail']"> </app-playlist-item>
         </div>
     </div>
 
     <div class="mt-5 pt-4">
         <h2> Podcast</h2>
         <div class="row">
-            <app-playlist-item> </app-playlist-item>
-            <app-playlist-item> </app-playlist-item>
-            <app-playlist-item> </app-playlist-item>
-            <app-playlist-item> </app-playlist-item>
+            <app-playlist-item [routerLink]="['/podcast/detail']"> </app-playlist-item>
+            <app-playlist-item [routerLink]="['/podcast/detail']"> </app-playlist-item>
+            <app-playlist-item [routerLink]="['/podcast/detail']"> </app-playlist-item>
+            <app-playlist-item [routerLink]="['/podcast/detail']"> </app-playlist-item>
         </div>
     </div>
     <br>
