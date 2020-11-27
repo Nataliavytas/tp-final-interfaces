@@ -14,3 +14,70 @@ textarea {
     height: 30px;
     border-radius: 100px;
 }
+
+.desktop-display {
+    margin-bottom: 10%;
+    margin-top: 5%;
+    color: white;
+}
+
+@media only screen and (min-width: 420px) {
+    .user-review fa-icon {
+        font-size: 30px;
+        color: #E1914B;
+    }
+    .user-review p {
+        margin: 0;
+    }
+    .song-details .type {
+        font-size: 16px;
+        color: #FC947D;
+    }
+    .song-details {
+        font-style: bold;
+    }
+    .song-details p span {
+        color: #FC947D;
+    }
+    .song-rating fa-icon {
+        font-size: 20px;
+        color: #E1914B;
+    }
+    .song-rating span {
+        text-decoration: underline;
+    }
+    .right-icons fa-icon {
+        font-size: 22px;
+        color: #FC947D;
+    }
+    .right-icons {
+        font-size: 16px;
+        color: #FC947D;
+    }
+    textarea {
+        height: 77px;
+        width: 90%;
+        background-color: #383B49;
+        border: 1px solid #FC947D;
+        border-radius: 5px;
+        resize: none;
+    }
+    .bordered {
+        border-radius: 22px;
+        border: 2px #FC947D solid;
+    }
+    .bordered .row {
+        margin-bottom: 0px !important;
+    }
+    .comentario span {
+        color: #FC947D;
+        font-size: 18px;
+    }
+    .comentario fa-icon {
+        color: #E1914B;
+    }
+    .comentario p {
+        font-size: 14px;
+        margin: 0.2rem;
+    }
+}
