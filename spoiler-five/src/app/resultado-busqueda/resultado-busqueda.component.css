@@ -100,4 +100,7 @@ table .table-icon {
     table td {
         border-top: none;
     }
+    table fa-icon {
+        color: #FC947D;
+    }
 }
