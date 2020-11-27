@@ -44,7 +44,7 @@
 	bottom: 0;
     right: 1%;
     transition: all 0.75s ease;
-    z-index: 2;
+    z-index: 20;
     opacity: 95%;
 }
 

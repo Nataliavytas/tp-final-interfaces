@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faChevronUp, faHeart, faList, faPlayCircle, faStar, faStepBackward, faStepForward, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faChevronUp, faHeart, faList, faPlayCircle, faStar, faStepBackward, faStepForward, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-music-reproductor',
@@ -13,11 +13,14 @@ export class MusicReproductorComponent implements OnInit {
   color4: string;
   color5: string;
   corazon: string;
+  expandido: string;
+  comun: string;
 
   constructor() { }
   faVolume = faVolumeUp;
   faHeart = faHeart;
   faUp = faChevronUp;
+  faDown = faChevronDown;
   faPlay = faPlayCircle;
   faNext = faStepForward;
   faPrevious = faStepBackward;
@@ -31,6 +34,8 @@ export class MusicReproductorComponent implements OnInit {
     this.color4 = "#585A66";
     this.color5 = "#585A66";
     this.corazon = "#585A66";
+    this.expandido = "hidden";
+    this.comun = "visible";
   }
 
   getCorazon() {
@@ -52,6 +57,14 @@ export class MusicReproductorComponent implements OnInit {
   }
   getcolor5() {
     return this.color5;
+  }
+
+  getexpandido() {
+    return this.expandido;
+  }
+
+  getcomun() {
+    return this.comun;
   }
 
   clickCorazon() {
@@ -82,6 +95,16 @@ export class MusicReproductorComponent implements OnInit {
         this.color5 = "gold";
       }
     }
+  }
+
+  bajar() {
+    this.comun = "visible";
+    this.expandido = "hidden";
+  }
+
+  subir() {
+    this.comun = "hidden";
+    this.expandido = "visible";
   }
 
 }
