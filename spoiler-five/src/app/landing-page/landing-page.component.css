@@ -4,12 +4,12 @@
 }
 
 @media only screen and (max-width: 420px) {
-    #body{
+    #body {
         width: 100vw;
     }
     .first-row {
         height: 90vh;
-        background-color: black;
+        background-color: var(--dark-grey);
         color: white;
     }
     .second-row {
@@ -17,16 +17,19 @@
     }
     .third-row {
         background: linear-gradient(180deg, #FC947D 0%, #FB7079 53.65%, #FA5075 100%);
+    }
+    .music-row {
+        margin-left: 40px;
     }
 }
 
 @media only screen and (min-width: 420px) {
-    #body{
+    #body {
         width: 100vw;
     }
     .first-row {
         height: 90vh;
-        background-color: black;
+        background-color: var(--dark-grey);
         color: white;
     }
     .second-row {
@@ -36,5 +39,9 @@
     .third-row {
         background: linear-gradient(180deg, #FC947D 0%, #FB7079 53.65%, #FA5075 100%);
         height: 50vh;
+    }
+    .music-row {
+        margin-top: 250px;
+        margin-left: 70px;
     }
 }
