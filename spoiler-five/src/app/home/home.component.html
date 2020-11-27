@@ -7,7 +7,7 @@
         </div>
         <div class="col-9" id="body">
             <div class="row my-5">
-                <div>
+                <div class="title-row">
                     <h1> Novedades</h1>
                 </div>
 
@@ -22,7 +22,7 @@
             </div>
 
             <div class="row  my-5">
-                <h1> Recomendaciones para ti</h1>
+                <h1 class="title-row"> Recomendaciones para ti</h1>
 
                 <div class="row">
                     <app-playlist-item [routerLink]="['/song/detail']"> </app-playlist-item>
@@ -34,7 +34,7 @@
             </div>
 
             <div class="row mt-5 last-row">
-                <h1> Mas escuchados</h1>
+                <h1 class="title-row"> Mas escuchados</h1>
                 <div class="row">
                     <app-playlist-item [routerLink]="['/song/detail']"> </app-playlist-item>
                     <app-playlist-item [routerLink]="['/song/detail']"> </app-playlist-item>

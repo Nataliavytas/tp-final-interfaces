@@ -1,7 +1,8 @@
-#body{
+#body {
     top: 6.5rem;
     margin-left: 30%;
 }
+
 .first-carousel {
     width: 100%;
 }
@@ -10,7 +11,8 @@
     margin-bottom: 30%;
 }
 
-h1, h2{
+h1,
+h2 {
     background: -webkit-linear-gradient(#FC947D 0%, #FB7079 53.65%, #FA5075 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -20,8 +22,11 @@ h1, h2{
     .last-row {
         margin-bottom: 15%;
     }
-    #mobile{
+    #mobile {
         display: none;
+    }
+    .title-row {
+        width: 100vw;
     }
 }
 
@@ -29,13 +34,11 @@ h1, h2{
     .last-row {
         margin-bottom: 15%;
     }
-    #mobile{
+    #mobile {
         display: inline-block;
         margin-left: 8%;
     }
-
-    #body{
+    #body {
         display: none;
     }
 }
-

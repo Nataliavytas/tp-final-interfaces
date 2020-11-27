@@ -1,12 +1,13 @@
-#body{
+#body {
     top: 6rem;
     bottom: 10rem;
     margin-left: 30%;
 }
 
-#body p{
+#body p {
     color: white;
 }
+
 .first-carousel {
     width: 100%;
 }
@@ -15,19 +16,23 @@
     margin-bottom: 30%;
 }
 
-#mobile{
+#mobile {
     margin: 5%;
 }
 
-h1{
+.corazon :hover {
+    color: rgba(250, 39, 39, 0.822);
+}
+
+h1 {
     background: -webkit-linear-gradient(#FC947D 0%, #FB7079 53.65%, #FA5075 100%);
     background-clip: text;
-    -webkit-text-fill-color: transparent;  
+    -webkit-text-fill-color: transparent;
 }
 
 table {
     color: white;
-    z-index: 1;
+    z-index: 0;
 }
 
 table th {
@@ -42,24 +47,29 @@ table td {
 }
 
 table fa-icon {
+    font-size: 20px;
+}
+
+table .table-icon {
+    color: #FC947D;
+}
+
+.icono-left {
     color: #FC947D;
     font-size: 20px;
 }
 
-.icono-left{
-    color: #FC947D;
-    font-size: 20px;
+.title-row {
+    width: 80vw;
 }
 
 @media only screen and (min-width: 420px) {
     .last-row {
         margin-bottom: 15%;
     }
-
-    #mobile{
+    #mobile {
         display: none;
     }
-
     table {
         font-size: 16px;
     }
@@ -69,22 +79,18 @@ table fa-icon {
 }
 
 @media only screen and (max-width: 419px) {
-
-    h2{
+    h2 {
         background: -webkit-linear-gradient(#FC947D 0%, #FB7079 53.65%, #FA5075 100%);
         background-clip: text;
-        -webkit-text-fill-color: transparent;  
+        -webkit-text-fill-color: transparent;
     }
-    
-    #mobile{
+    #mobile {
         display: inline-block;
         margin-top: 6.3rem;
     }
-
-    #mobile p{
+    #mobile p {
         color: white;
     }
-
     table {
         font-size: 16px;
     }

@@ -1,6 +1,6 @@
 <nav class="fixed-top" id="mobile">
 
-    <a class="icono-left" href="#">
+    <a class="icono-left" (click)="backClicked()">
         <img src="./assets/iconos/arrow.svg" width="25" height="25" alt="" loading="lazy">
     </a>
 
@@ -13,8 +13,7 @@
     </a>
 
     <a class="icono" href="#">
-        <img src="./assets/iconos/Notificacion-bell.svg" width="25" height="25" class="align-top logo" alt=""
-            loading="lazy">
+        <img src="./assets/iconos/Notificacion-bell.svg" width="25" height="25" class="align-top logo" alt="" loading="lazy">
     </a>
 
     <a class="icono" [routerLink]="['/buscar']">
