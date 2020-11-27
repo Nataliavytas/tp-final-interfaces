@@ -70,6 +70,63 @@
     </div>
 </div>
 
+<div class="mobile-display d-block d-md-none mt-4">
+    <div class="row pt-5 mt-5 song-header">
+        <div class="col-6 text-center pt-5">
+            <img src="../../assets/small-pic.png" height="118" alt="">
+        </div>
+        <div class="col-6 text-center song-details pt-5">
+            <h4>Titulo de la cancion</h4>
+            <p> <span> by </span> Artista </p>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            3.15
+        </div>
+    </div>
+    <div class="row container">
+        <div class="col-6 user-review text-center">
+            <p>Tu valoracion:</p>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+            <fa-icon [icon]="faStar"> </fa-icon>
+        </div>
+        <div class="col-6 text-right pt-5 right-icons">
+            <fa-icon [icon]="faHeart" class="mx-5"> </fa-icon>
+            <fa-icon [icon]="faShare"> </fa-icon>
+        </div>
+    </div>
+
+    <div class="mx-3 py-5">
+        <div class="bordered container">
+            <div class="row p-4" *ngFor="let comment of comments">
+                <div class="py-2 comentario">
+                    <p> <span class="mr-2">{{ comment.username}} </span> puntuó <span class="mx-2"> 
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                            <fa-icon [icon]="faStar"> </fa-icon>
+                            <fa-icon [icon]="faStar"> </fa-icon></span> </p>
+                    <p *ngIf="comment.comment !='' "> {{comment.comment}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h2 class="ml-5">Comenta! </h2>
+        </div>
+        <div class="row">
+            <textarea cols="30 " class="mx-auto" rows="10"></textarea>
+        </div>
+        <button class="primary-button text-center float-right mt-3"> Opinar</button>
+    </div>
+</div>
 
 
 <app-music-reproductor> </app-music-reproductor>

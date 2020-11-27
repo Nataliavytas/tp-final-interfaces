@@ -21,6 +21,12 @@ textarea {
     color: white;
 }
 
+.mobile-display {
+    margin-bottom: 30%;
+    margin-top: 5%;
+    color: white;
+}
+
 @media only screen and (min-width: 420px) {
     .user-review fa-icon {
         font-size: 30px;
@@ -79,5 +85,57 @@ textarea {
     .comentario p {
         font-size: 14px;
         margin: 0.2rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .song-details {
+        color: #FC947D;
+    }
+    .song-details fa-icon {
+        color: #E1914B;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .song-header {
+        width: 100%;
+    }
+    textarea {
+        height: 126px;
+        width: 90%;
+        background-color: #585A66;
+        border: 1px solid #FC947D;
+        border-radius: 5px;
+        resize: none;
+    }
+    .bordered {
+        border: 2px solid #FC947D;
+        border-radius: 30px;
+    }
+    .comentario span {
+        color: #FC947D;
+        font-size: 18px;
+    }
+    .comentario fa-icon {
+        color: #E1914B;
+    }
+    .comentario p {
+        font-size: 14px;
+        margin: 0.2rem;
+    }
+    #comentar h2 {
+        color: #FC947D;
+    }
+    .user-review fa-icon {
+        font-size: 22px;
+    }
+    .user-review p {
+        color: #FC947D;
+        margin-bottom: 0;
+    }
+    .right-icons fa-icon {
+        font-size: 24px;
+        color: #FC947D;
     }
 }
