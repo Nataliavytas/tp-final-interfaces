@@ -69,7 +69,7 @@ export class MusicReproductorComponent implements OnInit {
 
   clickCorazon() {
     if (this.corazon == "#585A66") {
-      this.corazon = "#c27ef0";
+      this.corazon = "#fa2727";
     } else {
       this.corazon = "#585A66"
     }
