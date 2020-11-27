@@ -1,4 +1,6 @@
 import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import {Location} from '@angular/common';
+
 
 @Component({
   selector: 'app-nav-bar',
@@ -16,7 +18,7 @@ export class NavBarComponent implements OnInit {
   seleccionadoGenero: string[];
   seleccionadoDecada: string[];
 
-  constructor(private _eref: ElementRef) { }
+  constructor(private _eref: ElementRef, private _location: Location) { }
 
   ngOnInit(): void {
     this.visible = false;
@@ -70,6 +72,10 @@ export class NavBarComponent implements OnInit {
         this.visible = false;
       }
     }
+  }
+
+  backClicked() {
+    this._location.back();
   }
 
 }

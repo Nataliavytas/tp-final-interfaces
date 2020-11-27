@@ -12,7 +12,10 @@ export class ResultadoBusquedaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.corazon = "#585A66";
   }
+
+  corazon: string;
 
   faStar = faStar;
   faClock = faClock;
@@ -50,5 +53,18 @@ export class ResultadoBusquedaComponent implements OnInit {
     favorite: true,
   }
   ]
+
+  getCorazon() {
+    return this.corazon;
+  }
+
+  clickCorazon() {
+    if (this.corazon == "#585A66") {
+      this.corazon = "#fa2727";
+    } else {
+      this.corazon = "#585A66"
+    }
+
+  }
 
 }

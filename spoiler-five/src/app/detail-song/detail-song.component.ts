@@ -24,14 +24,24 @@ export class DetailSongComponent implements OnInit {
   faDots = faEllipsisH;
 
   comments: Comment[] = [{
-    username: "Roberto", 
-    stars: 1,
-    comment: "Una cagada la verdad"
+    username: "natalia_vytas", 
+    stars: [1,2,3,4,5],
+    comment: "La verdad me gusto muchisimo. Muy buen tema. "
   },
   {
-    username: "Carla", 
-    stars: 3,
-    comment: "Meh"
+    username: "thor", 
+    stars: [1,2,3,4],
+    comment: "No soy muy fan de este artista, pero esta cancion en particular esta buena. "
+  },
+  {
+    username: "loki", 
+    stars: [1],
+    comment: "Horrible. "
+  }, 
+  { 
+    username: "hulk_123", 
+    stars: [1,2],
+    comment: ""
   }
 ]
 

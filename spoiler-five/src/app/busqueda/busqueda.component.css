@@ -1,11 +1,11 @@
-.busqueda{
+.busqueda {
     background-color: var(--dark-grey);
     margin-top: 5rem;
     height: 80vh;
     width: 100%;
 }
 
-.inpBusqueda{
+.inpBusqueda {
     width: 60vw;
     height: 2rem;
     left: 15%;
@@ -13,7 +13,7 @@
     z-index: 0;
 }
 
-.inpBusqueda input{
+.inpBusqueda input {
     width: 55vw;
     background: white;
     border-radius: 100px;
@@ -23,14 +23,13 @@
     margin-right: 2%;
 }
 
-label{
+label {
     background: -webkit-linear-gradient(#FC947D 0%, #FB7079 53.65%, #FA5075 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-
-#titulo{
+#titulo {
     text-align: center;
     position: absolute;
     top: 38%;
@@ -43,7 +42,7 @@ label{
     -webkit-text-fill-color: transparent;
 }
 
-.groupButtons{
+.groupButtons {
     text-align: center;
     position: absolute;
     top: 45%;
@@ -53,7 +52,7 @@ label{
     margin: -15% 0 0 -25%;
 }
 
-.boton{
+.boton {
     display: inline;
     margin: 3%;
     border-radius: 15px;
@@ -63,7 +62,7 @@ label{
     color: white;
 }
 
-.inputGroups{
+.inputGroups {
     text-align: center;
     position: absolute;
     top: 65%;
@@ -73,7 +72,7 @@ label{
     margin: -15% 0 0 -25%;
 }
 
-.custom-select{
+.custom-select {
     border-radius: 100px;
     border-style: solid;
     border-width: 1px;

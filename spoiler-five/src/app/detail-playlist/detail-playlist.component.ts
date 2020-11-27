@@ -23,30 +23,59 @@ export class DetailPlaylistComponent implements OnInit {
   faList = faList;
   faDots = faEllipsisH;
 
-  comments: Comment[] = [{
-    username: "Roberto", 
-    stars: 1,
-    comment: "Una cagada la verdad"
+  comments: Comment[] = [
+    {
+      username: "thor", 
+      stars: [1,2,3,4],
+      comment: " "
+    },{
+    username: "natalia_vytas", 
+    stars: [1,2,3,4,5],
+    comment: "Esta playlist la uso para estudiar y 10/10"
+  },
+  { 
+    username: "hulk_123", 
+    stars: [1,2],
+    comment: ""
   },
   {
-    username: "Carla", 
-    stars: 3,
-    comment: "Meh"
-  }
+    username: "loki", 
+    stars: [1,2,3],
+    comment: "Cool."
+  }, 
+ 
 ]
 
 songs: Song[] = [{
-    name: "Algun nombre", 
-    artist:"Corpse",
-    album: "el mas nuevo", 
-    release: "26-01-2020",
+    name: "Valse", 
+    artist:"Ivan Susanin",
+    album: "Glinka", 
+    release: "26-04-2017",
     favorite: true,
 },{
-  name: "Nombre 2",
-  artist:"string",
-  album: "string", 
+  name: "Maskarade",
+  artist:"Aram Khachaturian",
+  album: "Khachaturian", 
   release: "21-02-2016",
-  favorite: false,
+  favorite: true,
+},{
+  name: "Danse Macabre", 
+  artist:"Camille Saint-Saens",
+  album: "The Carnival of the animals", 
+  release: "20-07-2020",
+  favorite: true,
+},{
+name: "The Fountain",
+artist:"Luncatic Soul",
+album: "Through Shaded Woods", 
+release: "12-08-2018",
+favorite: false,
+},{
+  name: "Oblivion", 
+  artist:"Luncatic Soul",
+  album: "Through Shaded Woods", 
+  release: "12-08-2018",
+  favorite: true,
 }
 ]
 

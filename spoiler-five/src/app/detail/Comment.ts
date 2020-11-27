@@ -1,5 +1,5 @@
 export interface Comment {
     username:string;
-    stars: number;
+    stars: number[];
     comment: string;
 }
