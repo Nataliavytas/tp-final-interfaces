@@ -1,6 +1,30 @@
 footer {
     height: 100px;
     width: 100vw;
+    background-color: var(--dark-grey);
+    color: white;
+    border-width: 1px;
+    border-top-style: solid;
+    border-top-color: coral;
+}
+
+#expandido{
+    height: 50rem;
+    width: 100vw;
+    background-color: var(--dark-grey);
+    color: white;
+    border-width: 1px;
+    border-top-style: solid;
+    border-top-color: coral;
+    border-radius: 5px;
+    z-index: 30;
+}
+
+#fotoalbum{
+    margin-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .icon {
@@ -23,6 +47,14 @@ button {
     background-color: transparent;
     border: none;
     color: black;
+}
+
+.star :hover{
+    color: yellow;
+}
+
+.corazon :hover{
+    color: rgba(250, 39, 39, 0.822);
 }
 
 @media only screen and (min-width: 420px) {
